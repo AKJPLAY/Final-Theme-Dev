@@ -17,20 +17,35 @@
         "id": "header_layout",
         "label": "Header Layout",
         "options": [
-            {
-                "value": "header-layout-1",
-                "label": "Layout 1"
-            },
-            {
-                "value": "header-layout-2",
-                "label": "Layout 2"
-            },
-            {
-                "value": "header-layout-3",
-                "label": "Layout 3"
-            }
-        ]
-       } 
+                {
+                    "value": "header-layout-1",
+                    "label": "Layout 1"
+                },
+                {
+                    "value": "header-layout-2",
+                    "label": "Layout 2"
+                },
+                {
+                    "value": "header-layout-3",
+                    "label": "Layout 3"
+                }
+            ]
+        }, 
+        {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "t:sections.header.settings.logo.label"
+        },
+        {
+            "type": "range",
+            "id": "logo_width",
+            "min": 50,
+            "max": 250,
+            "step": 10,
+            "default": 100,
+            "unit": "t:sections.header.settings.logo_width.unit",
+            "label": "t:sections.header.settings.logo_width.label"
+        }
     ]
 }
 {% endschema %}
