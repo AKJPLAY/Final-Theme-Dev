@@ -6,5 +6,32 @@
       "theme_author": "Shopify",
       "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
       "theme_support_url": "https://support.shopify.com/"
+    },
+    {
+      "name": "Color",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Heading Font"
+        },
+        {
+          "type": "font_picker",
+          "id": "type_header_font",
+          "default": "assistant_n4",
+          "label": "Heading Font",
+          "info": "Choose Heading Font"
+        },
+        {
+          "type": "header",
+          "content": "Body Font"
+        },
+        {
+          "type": "font_picker",
+          "id": "type_body_font",
+          "default": "assistant_n4",
+          "label": "Body Font",
+          "info": "Choose Body Font"
+        }
+      ]
     }
 ]

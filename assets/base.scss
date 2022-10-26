@@ -1,5 +1,5 @@
 :root {
-    --clr-accent-500: hsl(12, 60%, 45%);
+    --clr-accent-500: #FB77A0;
     --clr-accent-400: hsl(12, 88%, 59%);
     --clr-accent-300: hsl(12, 88%, 75%);
     --clr-accent-100: hsl(13, 100%, 96%);
@@ -9,11 +9,8 @@
     --clr-neutral-900: hsl(232, 12%, 13%);
     --clr-neutral-100: hsl(0, 0%, 100%);
 
-    --ff-primary: 'Be Vietnam Pro', sans-serif;
-    --ff-primary: 'Be Vietnam Pro', sans-serif;
-
-    --ff-body: var(--ff-primary);
     --ff-heading: var(--ff-primary);
+    --ff-body: var(--ff-secondary);
 
     --fw-regular: 400;
     --fw-semi-bold: 500;
@@ -45,7 +42,7 @@
 }
 
 
-@media (min-width: 50em) {
+@media (min-width: 62em) {
     :root {
         --fs-body: var(--fs-500);
         --fs-primary-heading: var(--fs-900);
@@ -59,6 +56,15 @@
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+input {
+    &:focus,
+    &:hover {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
 }
 
 /* Remove default margin */
@@ -101,6 +107,8 @@ img,
 picture {
     max-width: 100%;
     display: block;
+    object-fit: contain;
+    object-position: center;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -217,7 +225,7 @@ picture {
 .even-columns {
     display: grid;
     gap: 1rem;
-    @media (min-width: 50em) {
+    @media (min-width: 62em) {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
     }
@@ -264,23 +272,35 @@ body {
     
 }
 
+//Links
+
+.link {
+    color: #000000;
+    text-decoration: none;
+    font-size: var(--size-500);
+    &:visited,
+    &link {
+        color: #000000;
+    }
+}
 
 // Navigation
 
 .primary-header {
     padding-top: var(--size-200);
-    @media (min-width: 50em) {
+    @media (min-width: 62em) {
         padding-top: var(--size-500);
     }
     .nav-wrapper {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: var(--size-400);
-        @media (min-width: 50em) {
+        @media (min-width: 62em) {
             gap: var(--size-900);
         }
     }
-    @media (max-width: 50em) {
+    @media (max-width: 62em) {
         &[overlay]::before {
             content: '';
             position: fixed;
@@ -297,7 +317,7 @@ body {
             gap: clamp(var(--size-400), 5vw, var(--size-700));
             font-weight: var(--fw-semi-bold);
         }
-        @media (max-width: 50em) {
+        @media (max-width: 62em) {
             display: none;
     
             position: absolute;
@@ -339,10 +359,13 @@ body {
             display: inline-flex;
             text-decoration: none;
             margin: 0 var(--size-100);
-            @media (min-width: 50em) {
+            &:last-child {
+                margin-right: 0;
+            }
+            @media (min-width: 62em) {
                 margin: 0 var(--size-200);
             }
-            @media (max-width: 50em) {
+            @media (max-width: 62em) {
                 .icon {
                     width: 30px;
                     height: 30px;
@@ -352,7 +375,7 @@ body {
 
         .mobile-nav-toggle {
             display: none;
-            @media (max-width: 50em) {
+            @media (max-width: 62em) {
                 display: inline-flex;
                 cursor: pointer;
                 background: transparent;
@@ -361,6 +384,90 @@ body {
         
             .icon-close {
                 display: none;
+            }
+        }
+    }
+    &.layout-2 {
+        .nav-wrapper {
+            .icon-menu-container:first-child {
+                margin-left: 0;
+                margin-right: auto;
+            }
+        }
+        .pirmary-navigation {
+            padding: 10px 0px;
+            ul {
+                width: max-content;
+                margin: auto;
+            }
+        }
+    }
+    &.layout-3 {
+        .nav-wrapper {
+            position: relative;
+            .left-s {
+                display: flex;
+                align-items: center;
+                .icon-menu-container {
+                    float: none;
+                    margin-right: var(--size-300);
+                    .mobile-nav-toggle {
+                        margin: 0;
+                        display: block;
+                        border: none;
+                        background: transparent;
+                    }
+                }
+            }
+            .search-container {
+                position: absolute;
+                inset: 0;
+                width: 50%;
+                max-width: 768px;
+                margin: auto;
+                height: 55px;
+                @media (max-width: 62em) {
+                    position: relative;
+                    height: 35px;
+                }
+                form.search {
+                    display: flex;
+                    height: 100%;
+                    .field{
+                        display: flex;
+                        height: 100%;
+                        width: 100%;
+                        background: rgb(217, 217, 217);
+                        border-radius: 50px;
+                        padding: 0px 25px;
+                    }
+                    .search__input {
+                        display: flex;
+                        width: 100%;
+                        appearance: none;
+                        border: none;
+                        background: transparent;
+                        &::placeholder {
+                            color: #000000;
+                        }
+                    }
+                    .search__button {
+                        position: absolute;
+                        inset: 0;
+                        margin: auto;
+                        width: max-content;
+                        height: max-content;
+                        background: transparent;
+                        border: none;
+                        margin-right: 10px;
+                        @media (max-width: 62em) {
+                            .icon {
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -375,10 +482,17 @@ annoucement-bar {
     .swiper {
         padding: var(--size-200) 0;
     }
+
+    .swiper-wrapper{
+        transition-timing-function : linear;
+    }
+
     .swiper-slide {
         text-align: center;
         color: var(--clr-accent-100);
         font-size: var(--fs-nav);
+        width: max-content !important;
+        margin: 0 10px;
     }
     .swiper-button-next{
         right: 0;
@@ -401,7 +515,7 @@ annoucement-bar {
 }
 
 .display-md-inline-flex {
-    @media (min-width: 50em) {
+    @media (min-width: 62em) {
         display: inline-flex !important;
     }
 }

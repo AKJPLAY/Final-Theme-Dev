@@ -5,7 +5,7 @@
                 {%- if request.page_type == 'index' -%}
                     <h1 class="header__heading">
                 {%- endif -%}
-                    <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+                    <a href="{{ routes.root_url }}" class="logo store-brand">
                         {%- if section.settings.logo != blank -%}
                         {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
                         {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
@@ -25,11 +25,11 @@
                 {%- endif -%}
                 <nav class="pirmary-navigation" id="primary-navigation" aria-expanded="false">
                     <ul aria-label="Pirmary" role="list" class="nav-list">
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Carrers</a></li>
-                        <li><a href="#">Community</a></li>
+                        <li><a class="link" href="#">Pricing</a></li>
+                        <li><a class="link" href="#">Product</a></li>
+                        <li><a class="link" href="#">About Us</a></li>
+                        <li><a class="link" href="#">Carrers</a></li>
+                        <li><a class="link" href="#">Community</a></li>
                     </ul>
                 </nav>
                 <div class="icon-menu-container">
@@ -38,6 +38,12 @@
                             <circle cx="24" cy="24" r="24" fill="#D9D9D9"/>
                             <circle cx="21.4414" cy="22.4414" r="8.44135" stroke="black" stroke-width="2"/>
                             <path d="M27.2847 28.0981L35 35.8135" stroke="black" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <a href="/wishlist" class="icon-menu display-sm-none display-md-inline-flex">
+                        <svg class="icon icon-wishlist" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="24" fill="#D9D9D9"/>
+                            <path d="M29.7052 15.2727C32.3851 15.2727 34.7533 17.05 34.7533 20.6273C34.7533 26.267 27.409 30.0557 23.4994 34.1898C19.5899 30.0557 12.2467 26.2682 12.2467 20.6284C12.2467 17.1568 14.5058 15.2727 17.2948 15.2727C20.8725 15.2727 22.7468 19.4136 23.4994 21.3091C24.2498 19.4159 26.1242 15.2727 29.7052 15.2727ZM29.7052 13C27.2593 13 24.8157 14.2068 23.4994 16.8852C22.1831 14.2068 19.7395 13 17.2948 13C13.4663 13 10 15.7159 10 20.6011C10 28.8625 21.1413 33.0307 23.4994 38C25.8575 33.0307 37 28.8625 37 20.6011C37 15.3898 33.1591 13 29.7052 13Z" fill="black"/>
                         </svg>
                     </a>
                     <a href="/account" class="icon-menu display-sm-none display-md-inline-flex">
@@ -73,3 +79,14 @@
         </div>
     </header>
 </sticky-header>
+<style>
+    .logo img{
+        width: {{ section.settings.logo_width }}px;
+        display: inline-block;
+    }
+    @media (max-width: 62em) {
+        .logo img{
+            width: 120px;
+        }
+    }
+</style>
