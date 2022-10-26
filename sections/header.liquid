@@ -1,0 +1,36 @@
+{% if section.settings.header_layout == 'header-layout-1' %}
+    {% include 'header-layout-1' %}
+{% elsif section.settings.header_layout == 'header-layout-2' %}
+    {% include 'header-layout-2' %}
+{% else %}
+    {% include 'header-layout-3' %}
+{% endif %}
+
+
+
+{% schema %}
+{
+   "name": "Header",
+    "settings": [
+       {
+        "type": "select",
+        "id": "header_layout",
+        "label": "Header Layout",
+        "options": [
+            {
+                "value": "header-layout-1",
+                "label": "Layout 1"
+            },
+            {
+                "value": "header-layout-2",
+                "label": "Layout 2"
+            },
+            {
+                "value": "header-layout-3",
+                "label": "Layout 3"
+            }
+        ]
+       } 
+    ]
+}
+{% endschema %}
