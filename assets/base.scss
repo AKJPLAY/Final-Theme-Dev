@@ -288,6 +288,9 @@ body {
 
 .primary-header {
     padding-top: var(--size-200);
+    .mobile-nav-toggle {
+        cursor: pointer;
+    }
     @media (min-width: 62em) {
         padding-top: var(--size-500);
     }
@@ -413,9 +416,9 @@ body {
                     margin-right: var(--size-300);
                     .mobile-nav-toggle {
                         margin: 0;
-                        display: block;
                         border: none;
                         background: transparent;
+                        display: flex;
                     }
                 }
             }
@@ -426,6 +429,9 @@ body {
                 max-width: 768px;
                 margin: auto;
                 height: 55px;
+                @media (max-width: 600px) {
+                    display: none;
+                }
                 @media (max-width: 62em) {
                     position: relative;
                     height: 35px;
@@ -439,11 +445,12 @@ body {
                         width: 100%;
                         background: rgb(217, 217, 217);
                         border-radius: 50px;
-                        padding: 0px 25px;
+                        overflow: hidden;
                     }
                     .search__input {
                         display: flex;
                         width: 100%;
+                        padding: 0px 25px;
                         appearance: none;
                         border: none;
                         background: transparent;
@@ -452,6 +459,7 @@ body {
                         }
                     }
                     .search__button {
+                        display: flex;
                         position: absolute;
                         inset: 0;
                         margin: auto;
@@ -460,6 +468,7 @@ body {
                         background: transparent;
                         border: none;
                         margin-right: 10px;
+                        background: transparent;
                         @media (max-width: 62em) {
                             .icon {
                                 width: 30px;
@@ -477,10 +486,12 @@ body {
 // Annoucement Bar
 
 annoucement-bar {
+    overflow: hidden;
     display: block;
     background-color: var(--clr-accent-500);
     .swiper {
         padding: var(--size-200) 0;
+        overflow: visible;
     }
 
     .swiper-wrapper{
