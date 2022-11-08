@@ -139,6 +139,7 @@ function faqPageScript(){
 
 (() => {
 
+    //Annoucment Bar Script Start
     class AannoucementBar extends HTMLElement {
         constructor() {
           super();
@@ -155,23 +156,38 @@ function faqPageScript(){
                 mousewheelControl: true,
                 keyboardControl: true,
             });
-
-            swiper.on('transitionEnd', function () {
-                let activeSlide = swiper.realIndex +1; // Index of Current active slide
-                let previousSlide = swiper.previousIndex -2; // Index of previous active slide
-                if (previousSlide == -1) { 
-                    previousSlide = 0;
-                } else if (previousSlide == 
-                    document.querySelectorAll('.swiper-slide').length) { 
-                    // When swiper loops, slideChange 
-                    // gets fired twice and messes up animations. This 
-                    // prevents it from doing so.
-                  return;
-                }
-            })
         }
     }
 
     customElements.define('annoucement-bar', AannoucementBar);
+    //Annoucment Bar Script End
 
+
+    //Slider Script Start
+    class SliderSection extends HTMLElement {
+      constructor() {
+        super();
+          this.slider = this.querySelector('.swiper');
+          if(this.slider){
+            console.log(this.slider.id);
+            const swiper = new Swiper('.' + this.slider.id , {
+                // Optional parameters
+                loop: true,
+                autoplay: {
+                  delay: 1
+                },
+                slidesPerView: 'auto',
+                speed: 12000,
+                grabCursor: true,
+                mousewheelControl: true,
+                keyboardControl: true,
+            });
+          }
+          
+      }
+  }
+
+  customElements.define('slider-section', SliderSection);
+
+  //Slider Script End
 })();
