@@ -1,7 +1,7 @@
 <slider-section class="slider-section">
     <div class="container">
         <!-- Slider main container -->
-        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{"loop": {{ section.settings.loop }}{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }},"navigation":{"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"}}'> 
+        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{"loop": {{ section.settings.loop }}{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }},"navigation":{"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"},"pagination":{"el": ".swiper-pagination","dynamicBullets": true}}'> 
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -28,6 +28,7 @@
                     </div>    
                 {% endfor %}
             </div>
+            <div class="swiper-pagination"></div>
             <div class="swiper-button-prev">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="24" transform="rotate(-180 24 24)" fill="#D9D9D9"/>
