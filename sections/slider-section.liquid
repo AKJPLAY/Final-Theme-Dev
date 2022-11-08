@@ -1,0 +1,97 @@
+<slider-section>
+
+</slider-section>
+
+{% schema %}
+    {
+        "name": "Slider Section",
+        "presets": [
+            {
+                "category": "Growth",
+                "name":"Slider Section"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "slider_with_image",
+                "name": "Slider With Image",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Choose Imaege"
+                    },
+                    {
+                        "type": "text",
+                        "id": "top_title",
+                        "label": "Top title",
+                        "default": "Amazing Style"
+                    },
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title",
+                        "default": "Unstoppable"
+                    },
+                    {
+                        "type": "text",
+                        "id": "btn_1_text",
+                        "label": "Primary Button Text",
+                        "default": "Shop Now"
+                    },
+                    {
+                        "type": "url",
+                        "id": "btn_1_url",
+                        "label": "Primary Button Url"
+                    },
+                    {
+                        "type": "text",
+                        "id": "btn_2_text",
+                        "label": "Secondary Button Text",
+                        "default": "Discover Now"
+                    },
+                    {
+                        "type": "url",
+                        "id": "btn_2_url",
+                        "label": "Secondary Button Url"
+                    },
+                    {
+                        "type": "select",
+                        "id": "image_position",
+                        "label": "Image Position",
+                        "options": [
+                            {
+                                "value": "right",
+                                "label": "Right"
+                            },
+                            {
+                                "value": "left",
+                                "label": "Left"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "autoplay",
+                        "label": "Autoplay",
+                        "default": "false"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "arrow",
+                        "label": "Arrow",
+                        "default": "false"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "dots",
+                        "label": "Dots",
+                        "default": "false"
+                    }
+                ]
+            }
+        ],
+        "settings": [
+        ]
+    }
+{% endschema %}

@@ -1,3 +1,7 @@
+//Import Vander Css
+@import './swiper-bundle.scss';
+
+
 :root {
     --clr-accent-500: #FB77A0;
     --clr-accent-400: hsl(12, 88%, 59%);
@@ -491,7 +495,7 @@ annoucement-bar {
     background-color: var(--clr-accent-500);
     .swiper {
         padding: var(--size-200) 0;
-        overflow: visible;
+        overflow: hidden;
     }
 
     .swiper-wrapper{
@@ -532,5 +536,3 @@ annoucement-bar {
 }
 
 
-//Import Vander Css
-@import './swiper-bundle.scss';
