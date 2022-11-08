@@ -1,0 +1,23 @@
+{
+  "current": {
+    "sections": {
+      "annoucment": {
+        "type": "annoucment",
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "header_layout": "header-layout-1",
+          "logo": "shopify:\/\/shop_images\/Logo_2x_38c33a7e-f33e-48c0-8ca2-ef67fd630c09.png",
+          "logo_width": 100,
+          "menu": "main-menu"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
