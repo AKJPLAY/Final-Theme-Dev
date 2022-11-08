@@ -1,7 +1,7 @@
 <slider-section>
     <div class="container">
         <!-- Slider main container -->
-        <div class="swiper" id="swiper-{{ template.name }}{{ section.id }}" class="swiper-{{ template.name }}{{ section.id }}">
+        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{"loop": {{ section.settings.loop }},"{{ section.settings.autoplay }}": {"delay": {{ section.settings.delay }}},"speed": {{ section.settings.speed }}}'> 
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -101,29 +101,47 @@
                                 "label": "Left"
                             }
                         ]
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "autoplay",
-                        "label": "Autoplay",
-                        "default": false
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "arrow",
-                        "label": "Arrow",
-                        "default": false
-                    },
-                    {
-                        "type": "checkbox",
-                        "id": "dots",
-                        "label": "Dots",
-                        "default": false
                     }
                 ]
             }
         ],
         "settings": [
+            {
+                "type": "checkbox",
+                "id": "autoplay",
+                "label": "Autoplay",
+                "default": false
+            },
+            {
+                "type": "checkbox",
+                "id": "loop",
+                "label": "Loop",
+                "default": false
+            },
+            {
+                "type": "checkbox",
+                "id": "arrow",
+                "label": "Arrow",
+                "default": false
+            },
+            {
+                "type": "checkbox",
+                "id": "dots",
+                "label": "Dots",
+                "default": false
+            },
+            {
+                "type": "text",
+                "id": "delay",
+                "label": "Delay",
+                "default": "2000"
+            },
+            {
+                "type": "text",
+                "id": "speed",
+                "label": "Speed",
+                "default": "500"
+            }
         ]
     }
 {% endschema %}

@@ -168,27 +168,14 @@ function faqPageScript(){
       constructor() {
         super();
           this.slider = this.querySelector('.swiper');
+          this.config = this.slider.getAttribute('config');
           if(this.slider){
-            console.log(this.slider.id);
-            const sliderClass = '.' + this.slider.id;
-            const swiper = new Swiper(sliderClass , {
-                // Optional parameters
-                loop: true,
-                autoplay: {
-                  delay: 1
-                },
-                slidesPerView: 'auto',
-                speed: 12000,
-                grabCursor: true,
-                mousewheelControl: true,
-                keyboardControl: true,
-            });
+            const swiper = new Swiper('.' + this.slider.id , JSON.parse(this.config));
           }
-          
       }
-  }
+    }
 
-  customElements.define('slider-section', SliderSection);
+    customElements.define('slider-section', SliderSection);
 
   //Slider Script End
 })();
