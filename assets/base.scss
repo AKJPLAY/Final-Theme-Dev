@@ -571,7 +571,7 @@ annoucement-bar {
                         max-width: 50%;
                     }
                     .top_title {
-                        font-family: 'Poppins';
+                        font-family: var(--ff-body);
                         font-style: normal;
                         font-weight: 400;
                         font-size: 18px;
@@ -581,7 +581,7 @@ annoucement-bar {
                         }
                     }
                     .title {
-                        font-family: 'Poppins';
+                        font-family: var(--ff-heading);
                         font-style: normal;
                         font-weight: 800;
                         font-size: 32px;
@@ -592,7 +592,7 @@ annoucement-bar {
                         }
                     }
                     .content {
-                        font-family: 'Poppins';
+                        font-family: var(--ff-body);
                         font-style: normal;
                         font-weight: 400;
                         font-size: 14px;
