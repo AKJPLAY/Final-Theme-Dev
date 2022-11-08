@@ -143,7 +143,7 @@ function faqPageScript(){
         constructor() {
           super();
 
-            const swiper = new Swiper('.swiper', {
+            const swiper = new Swiper('.swiper-annoucement-bar', {
                 // Optional parameters
                 loop: true,
                 autoplay: {
