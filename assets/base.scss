@@ -560,12 +560,6 @@ annoucement-bar {
         }
         .swiper-slide {
             .inner-container {
-                @media (min-width: 62em) {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    align-items: center;
-                    justify-content: center;
-                }
                 .left-side {
                     @media (min-width: 62em) {
                         max-width: 50%;
@@ -616,6 +610,20 @@ annoucement-bar {
                         object-position: center;
                         @media (min-width: 62em) {
                             height: 550px;
+                        }
+                    }
+                }
+                @media (min-width: 62em) {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    justify-content: center;
+                    &.reverse {
+                        flex-direction: row;
+                        .left-side {
+                            .left-side-inner-container {
+                                text-align: right;
+                            }   
                         }
                     }
                 }
