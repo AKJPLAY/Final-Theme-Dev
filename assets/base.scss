@@ -545,51 +545,78 @@ annoucement-bar {
     .container {
         max-width: 1340px;
         margin: 0 auto;
-        height: 600px;
         border: 1px solid var(--clr-neutral-900);
         border-radius: 15px;
         overflow: hidden;
+        padding: 15px 15px;
+        @media (min-width: 62em) {
+            min-height: 600px;
+        }
+        .swiper-wrapper {
+            margin: 20px 0;
+            @media (min-width: 62em) {
+                margin: 10px 0;
+            }
+        }
         .swiper-slide {
             .inner-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @media (min-width: 62em) {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    justify-content: center;
+                }
                 .left-side {
-                    max-width: 50%;
+                    @media (min-width: 62em) {
+                        max-width: 50%;
+                    }
                     .top_title {
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 20px;
+                        font-size: 18px;
                         line-height: 1;
+                        @media (min-width: 62em) {
+                            font-size: 20px;
+                        }
                     }
                     .title {
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 800;
-                        font-size: 52px;
-                        line-height: 78px;
+                        font-size: 32px;
+                        line-height: 1.5;
                         color: #000000;
+                        @media (min-width: 62em) {
+                            font-size: 52px;   
+                        }
                     }
                     .content {
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 16px;
-                        line-height: 24px;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        @media (min-width: 62em) {
+                            font-size: 16px;
+                        }
                     }
                     .button-container {
                         
                     }
                 }
                 .right-side {
-                    max-width: 50%;
+                    @media (min-width: 62em) {
+                        max-width: 50%;
+                    }
                     img {
                         aspect-ratio: 1 / 1;
                         display: flex;
-                        height: 550px;
                         object-fit: contain;
                         object-position: center;
+                        @media (min-width: 62em) {
+                            height: 550px;
+                        }
                     }
                 }
             }

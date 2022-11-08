@@ -8,6 +8,9 @@
                 {% for block in section.blocks %}
                     <div class="swiper-slide">
                         <div class="inner-container">
+                            <div class="right-side">
+                                <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+                            </div>
                             <div class="left-side">
                                 <p class="top_title">{{ block.settings.top_title }}</p>
                                 <h2 class="title">{{ block.settings.title }}</h2>
@@ -20,9 +23,6 @@
                                         <a href="{{ block.settings.btn_2_url }}" class="btn btn--accent btn-secondary">{{ block.settings.btn_2_text }}</a>
                                     {% endif %}
                                 </div>
-                            </div>
-                            <div class="right-side">
-                                <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
                             </div>
                         </div>
                     </div>    
