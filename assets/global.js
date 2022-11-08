@@ -170,7 +170,8 @@ function faqPageScript(){
           this.slider = this.querySelector('.swiper');
           if(this.slider){
             console.log(this.slider.id);
-            const swiper = new Swiper('.' + this.slider.id , {
+            const sliderClass = '.' + this.slider.id;
+            const swiper = new Swiper(sliderClass , {
                 // Optional parameters
                 loop: true,
                 autoplay: {
