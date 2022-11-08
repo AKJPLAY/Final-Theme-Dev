@@ -1,11 +1,8 @@
 {
     "sections": {
-      "first-section": {
-        "type": "first-section",
-        "settings": {}
-      }
+      
     },
     "order": [
-      "first-section"
+      
     ]
 }
