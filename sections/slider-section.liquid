@@ -1,7 +1,7 @@
 <slider-section>
     <div class="container">
         <!-- Slider main container -->
-        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{"loop": {{ section.settings.loop }}{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% else %},"delayBetweenSlides": {{ section.settings.delay }}{% endif %},"speed": {{ section.settings.speed }}}'> 
+        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{"loop": {{ section.settings.loop }}{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }}}'> 
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -134,7 +134,8 @@
                 "type": "text",
                 "id": "delay",
                 "label": "Delay",
-                "default": "2000"
+                "default": "2000",
+                "info": "Work in Autoplay"
             },
             {
                 "type": "text",
