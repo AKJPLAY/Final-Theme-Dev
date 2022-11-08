@@ -1,5 +1,31 @@
 <slider-section>
-
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                {% for block in section.blocks %}
+                    <div class="swiper-slide">
+                        <div class="inner-container">
+                            <div class="left-side">
+                                <p class="top_title">{{ block.settings.top_title }}</p>
+                                <h2 class="title">{{ block.settings.title }}</h2>
+                                <p class="content">{{ block.settings.content }}</p>
+                                <div class="button-container">
+                                    <a href="{{ block.settings.btn_1_url }}" class="btn btn-primary">{{ block.settings.btn_1_text }}</a>
+                                    <a href="{{ block.settings.btn_2_url }}" class="btn btn-secondary">{{ block.settings.btn_2_text }}</a>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+                            </div>
+                        </div>
+                    </div>    
+                {% endfor %}
+            </div>
+        </div>        
+    </div>
 </slider-section>
 
 {% schema %}
@@ -32,6 +58,12 @@
                         "id": "title",
                         "label": "Title",
                         "default": "Unstoppable"
+                    },
+                    {
+                        "type": "text",
+                        "id": "content",
+                        "label": "Content",
+                        "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corporis praesentium ad suscipit ab error similique sequi architecto reiciendis assumenda officiis id quos, quod beatae soluta! Temporibus dolor earum beatae!"
                     },
                     {
                         "type": "text",
