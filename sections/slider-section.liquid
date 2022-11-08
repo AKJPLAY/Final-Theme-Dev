@@ -1,7 +1,7 @@
 <slider-section class="slider-section">
     <div class="container">
         <!-- Slider main container -->
-        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{"loop": {{ section.settings.loop }}{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }},"navigation":{"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"},"pagination":{"el": ".swiper-pagination","dynamicBullets": true}}'> 
+        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{"loop": {{ section.settings.loop }}{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }},"navigation":{"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"},"pagination":{"el": ".swiper-pagination","dynamicBullets": true,"clickable": true}}'> 
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
