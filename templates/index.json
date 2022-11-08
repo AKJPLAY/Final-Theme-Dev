@@ -20,6 +20,7 @@
         "3c1b7286-1866-4e96-b15b-44c59b236743": {
           "type": "slider_with_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Image_f87add74-fb7c-4a0f-88a8-5bfe85fe3b07.png",
             "top_title": "Amazing Style",
             "title": "Unstoppable",
             "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corporis praesentium ad suscipit ab error similique sequi architecto reiciendis assumenda officiis id quos, quod beatae soluta! Temporibus dolor earum beatae!",
@@ -33,6 +34,7 @@
         "c9f7a91f-4902-460c-8ade-57f1a98bbb4a": {
           "type": "slider_with_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Image_f87add74-fb7c-4a0f-88a8-5bfe85fe3b07.png",
             "top_title": "Amazing Style",
             "title": "Unstoppable",
             "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corporis praesentium ad suscipit ab error similique sequi architecto reiciendis assumenda officiis id quos, quod beatae soluta! Temporibus dolor earum beatae!",
