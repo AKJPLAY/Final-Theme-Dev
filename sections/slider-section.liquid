@@ -13,8 +13,12 @@
                                 <h2 class="title">{{ block.settings.title }}</h2>
                                 <p class="content">{{ block.settings.content }}</p>
                                 <div class="button-container">
-                                    <a href="{{ block.settings.btn_1_url }}" class="btn btn-primary">{{ block.settings.btn_1_text }}</a>
-                                    <a href="{{ block.settings.btn_2_url }}" class="btn btn-secondary">{{ block.settings.btn_2_text }}</a>
+                                    {% if block.settings.btn_1_text != blank %}
+                                        <a href="{{ block.settings.btn_1_url }}" class="btn btn-primary">{{ block.settings.btn_1_text }}</a>    
+                                    {% endif %}
+                                    {% if block.settings.btn_2_text != blank %}
+                                        <a href="{{ block.settings.btn_2_url }}" class="btn btn-secondary">{{ block.settings.btn_2_text }}</a>
+                                    {% endif %}
                                 </div>
                             </div>
                             <div class="right-side">
