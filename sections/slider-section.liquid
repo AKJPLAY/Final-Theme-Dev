@@ -12,16 +12,18 @@
                                 <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
                             </div>
                             <div class="left-side">
-                                <p class="top_title">{{ block.settings.top_title }}</p>
-                                <h2 class="title">{{ block.settings.title }}</h2>
-                                <p class="content">{{ block.settings.content }}</p>
-                                <div class="button-container">
-                                    {% if block.settings.btn_1_text != blank %}
-                                        <a href="{{ block.settings.btn_1_url }}" class="btn btn-primary">{{ block.settings.btn_1_text }}</a>    
-                                    {% endif %}
-                                    {% if block.settings.btn_2_text != blank %}
-                                        <a href="{{ block.settings.btn_2_url }}" class="btn btn--accent btn-secondary">{{ block.settings.btn_2_text }}</a>
-                                    {% endif %}
+                                <div class="left-side-inner-container">
+                                    <p class="top_title">{{ block.settings.top_title }}</p>
+                                    <h2 class="title">{{ block.settings.title }}</h2>
+                                    <p class="content">{{ block.settings.content }}</p>
+                                    <div class="button-container">
+                                        {% if block.settings.btn_1_text != blank %}
+                                            <a href="{{ block.settings.btn_1_url }}" class="btn btn-primary">{{ block.settings.btn_1_text }}</a>    
+                                        {% endif %}
+                                        {% if block.settings.btn_2_text != blank %}
+                                            <a href="{{ block.settings.btn_2_url }}" class="btn btn--accent btn-secondary">{{ block.settings.btn_2_text }}</a>
+                                        {% endif %}
+                                    </div>
                                 </div>
                             </div>
                         </div>
