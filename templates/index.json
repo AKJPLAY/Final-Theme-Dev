@@ -1,8 +1,67 @@
 {
-    "sections": {
-      
-    },
-    "order": [
-      
-    ]
+  "sections": {
+    "49a06c91-57a5-47e1-bb00-26704730f742": {
+      "type": "slider-section",
+      "blocks": {
+        "1c4945b2-ba71-4f41-ad00-4605b9f061e2": {
+          "type": "slider_with_image",
+          "settings": {
+            "top_title": "Amazing Style",
+            "title": "Unstoppable",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corporis praesentium ad suscipit ab error similique sequi architecto reiciendis assumenda officiis id quos, quod beatae soluta! Temporibus dolor earum beatae!",
+            "btn_1_text": "Shop Now",
+            "btn_1_url": "",
+            "btn_2_text": "Discover Now",
+            "btn_2_url": "",
+            "image_position": "right",
+            "autoplay": false,
+            "arrow": false,
+            "dots": false
+          }
+        },
+        "3c1b7286-1866-4e96-b15b-44c59b236743": {
+          "type": "slider_with_image",
+          "settings": {
+            "top_title": "Amazing Style",
+            "title": "Unstoppable",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corporis praesentium ad suscipit ab error similique sequi architecto reiciendis assumenda officiis id quos, quod beatae soluta! Temporibus dolor earum beatae!",
+            "btn_1_text": "Shop Now",
+            "btn_1_url": "",
+            "btn_2_text": "Discover Now",
+            "btn_2_url": "",
+            "image_position": "right",
+            "autoplay": false,
+            "arrow": false,
+            "dots": false
+          }
+        },
+        "c9f7a91f-4902-460c-8ade-57f1a98bbb4a": {
+          "type": "slider_with_image",
+          "settings": {
+            "top_title": "Amazing Style",
+            "title": "Unstoppable",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corporis praesentium ad suscipit ab error similique sequi architecto reiciendis assumenda officiis id quos, quod beatae soluta! Temporibus dolor earum beatae!",
+            "btn_1_text": "Shop Now",
+            "btn_1_url": "",
+            "btn_2_text": "Discover Now",
+            "btn_2_url": "",
+            "image_position": "right",
+            "autoplay": false,
+            "arrow": false,
+            "dots": false
+          }
+        }
+      },
+      "block_order": [
+        "1c4945b2-ba71-4f41-ad00-4605b9f061e2",
+        "3c1b7286-1866-4e96-b15b-44c59b236743",
+        "c9f7a91f-4902-460c-8ade-57f1a98bbb4a"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "49a06c91-57a5-47e1-bb00-26704730f742"
+  ]
 }
