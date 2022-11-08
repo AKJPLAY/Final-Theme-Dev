@@ -62,6 +62,7 @@
     box-sizing: border-box;
 }
 
+
 input {
     &:focus,
     &:hover {
@@ -78,6 +79,7 @@ input {
     padding: 0;
     font: inherit;
 }
+
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
@@ -108,7 +110,9 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
+svg,
 picture {
+
     max-width: 100%;
     display: block;
     object-fit: contain;
@@ -536,3 +540,91 @@ annoucement-bar {
 }
 
 
+//Slider Section
+.slider-section {
+    .container {
+        max-width: 1340px;
+        margin: 0 auto;
+        height: 600px;
+        border: 1px solid var(--clr-neutral-900);
+        border-radius: 15px;
+        overflow: hidden;
+        .swiper-slide {
+            .inner-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .left-side {
+                    max-width: 50%;
+                    .top_title {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 1;
+                    }
+                    .title {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 52px;
+                        line-height: 78px;
+                        color: #000000;
+                    }
+                    .content {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    .button-container {
+                        
+                    }
+                }
+                .right-side {
+                    max-width: 50%;
+                    img {
+                        aspect-ratio: 1 / 1;
+                        display: flex;
+                        height: 550px;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+//Button Css
+
+.btn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    max-width: 100%;
+    width: max-content;
+    display: inline-block;
+    border: 1px solid var(--clr-neutral-900);
+    padding: 0 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color:  #ffffff;
+    color: var(--clr-neutral-900);
+    margin: 10px 0;
+    & + & {
+        margin-left: 10px;
+    }
+    &--accent {
+        border: 1px solid var(--clr-accent-500);
+        background-color:  var(--clr-accent-500);
+        color: var(--clr-accent-100);
+    }
+}
+
+.slider-section {
+    margin: 30px 0;
+    display: flow-root;
+} 

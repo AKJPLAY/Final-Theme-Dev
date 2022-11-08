@@ -1,4 +1,4 @@
-<slider-section>
+<slider-section class="slider-section">
     <div class="container">
         <!-- Slider main container -->
         <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{"loop": {{ section.settings.loop }}{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }}}'> 
@@ -17,7 +17,7 @@
                                         <a href="{{ block.settings.btn_1_url }}" class="btn btn-primary">{{ block.settings.btn_1_text }}</a>    
                                     {% endif %}
                                     {% if block.settings.btn_2_text != blank %}
-                                        <a href="{{ block.settings.btn_2_url }}" class="btn btn-secondary">{{ block.settings.btn_2_text }}</a>
+                                        <a href="{{ block.settings.btn_2_url }}" class="btn btn--accent btn-secondary">{{ block.settings.btn_2_text }}</a>
                                     {% endif %}
                                 </div>
                             </div>
