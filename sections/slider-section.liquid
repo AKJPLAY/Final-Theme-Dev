@@ -7,7 +7,7 @@
                 <!-- Slides -->
                 {% for block in section.blocks %}
                     <div class="swiper-slide">
-                        <div class="inner-container">
+                        <div class="inner-container {{ block.settings.image_position }}">
                             <div class="right-side">
                                 <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
                             </div>
@@ -112,11 +112,11 @@
                         "label": "Image Position",
                         "options": [
                             {
-                                "value": "right",
+                                "value": "forword",
                                 "label": "Right"
                             },
                             {
-                                "value": "left",
+                                "value": "reverse",
                                 "label": "Left"
                             }
                         ]
