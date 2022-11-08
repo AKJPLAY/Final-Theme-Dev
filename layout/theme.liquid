@@ -72,7 +72,9 @@
     {% section 'annoucment' %}
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" template="{{ template.name }}" tabindex="-1">
-      {{ content_for_layout }}
+      <{{template.name}}-template>
+        {{ content_for_layout }}  
+      </{{template.name}}-template>
     </main>
 </body>
 </html>
