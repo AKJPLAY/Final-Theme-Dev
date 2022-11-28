@@ -8,8 +8,7 @@
                 {% assign breakpointsCount = breakpointsCount | plus: 1 %}
             {% endif %}
         {% endfor %}
-        {{ breakpointsCount }}
-        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{ {% if breakpointsCount != 0 %} "slidesPerView": "{{ section.settings.slide_show }}","spaceBetween": "{{ section.settings.slide_space }}" , {% endif %} "loop": "{{ section.settings.loop }}"{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }},"navigation":{"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"},"pagination":{"el": ".swiper-pagination","dynamicBullets": "true","clickable": "true"}, "breakpoints":{ {% for block in section.blocks %}{% if block.type == 'breakpoint'%} {% assign breakpointsIndex = breakpointsIndex | plus: 1 %} "{{ block.settings.width }}":{"slidesPerView": "{{ block.settings.slide_show }}", "spaceBetween": "{{ block.settings.slide_space }}" }{% if breakpointsIndex != breakpointsCount %},{% endif %}{% endif %} {%endfor%} }}'> 
+        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{ {% if breakpointsCount == 0 %} "slidesPerView": {{ section.settings.slide_show }},"spaceBetween": {{ section.settings.slide_space }} , {% endif %} "loop": {{ section.settings.loop }}{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }},"navigation":{"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"},"pagination":{"el": ".swiper-pagination","dynamicBullets": "true","clickable": "true"}, "breakpoints":{ {% for block in section.blocks %}{% if block.type == 'breakpoint'%} {% assign breakpointsIndex = breakpointsIndex | plus: 1 %} "{{ block.settings.width }}":{"slidesPerView": {{ block.settings.slide_show }}, "spaceBetween": {{ block.settings.slide_space }} }{% if breakpointsIndex != breakpointsCount %},{% endif %}{% endif %} {%endfor%} }}'> 
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -81,12 +80,16 @@
            "name": "Breakpoint",
             "settings": [
                 {
+                    "type": "header",
+                    "content": "Breakpoint Settings",
+                    "info": "Work on greater then this width"
+                },
+                {
                     "type": "number",
                     "id": "width",
                     "label": "Device Width",
                     "default": 768,
-                    "info": "in px",
-                    "placeholder": "Work below this width"
+                    "info": "in px"
                 },
                 {
                     "type": "range",
@@ -102,7 +105,7 @@
                     "type": "range",
                     "id": "slide_space",
                     "label": "Slide Between Space",
-                    "unit": "Sld",
+                    "unit": "px",
                     "min": 1,
                     "max": 30,
                     "step": 1,
@@ -138,7 +141,7 @@
             "type": "range",
             "id": "slide_space",
             "label": "Slide Between Space",
-            "unit": "Sld",
+            "unit": "px",
             "min": 1,
             "max": 30,
             "step": 1,
