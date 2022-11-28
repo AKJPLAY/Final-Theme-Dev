@@ -98,13 +98,22 @@
             "title": "Lightweight luxury earphones",
             "bg_color": "#FFFFFF"
           }
+        },
+        "9cbbb212-ccc1-4c31-9945-91f6c5a84d32": {
+          "type": "breakpoint",
+          "settings": {
+            "width": 768,
+            "slide_show": 2,
+            "slide_space": 8
+          }
         }
       },
       "block_order": [
         "e43bb65a-e438-4063-a882-dd76f79c98a1",
         "d60cab19-19c7-43f4-a36e-72282c944b56",
         "4f9eedc7-4ce8-45c3-85c8-5649454543b2",
-        "d7808b58-75e1-44dd-88fe-7effbec26ad0"
+        "d7808b58-75e1-44dd-88fe-7effbec26ad0",
+        "9cbbb212-ccc1-4c31-9945-91f6c5a84d32"
       ],
       "settings": {
         "title": "Featured Item",
