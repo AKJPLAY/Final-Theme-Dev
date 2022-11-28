@@ -106,6 +106,14 @@
             "slide_show": 2,
             "slide_space": 8
           }
+        },
+        "5f2fbbfa-c168-4263-9c4c-ad5ec1d959bd": {
+          "type": "breakpoint",
+          "settings": {
+            "width": 1200,
+            "slide_show": 3,
+            "slide_space": 10
+          }
         }
       },
       "block_order": [
@@ -113,7 +121,8 @@
         "d60cab19-19c7-43f4-a36e-72282c944b56",
         "4f9eedc7-4ce8-45c3-85c8-5649454543b2",
         "d7808b58-75e1-44dd-88fe-7effbec26ad0",
-        "9cbbb212-ccc1-4c31-9945-91f6c5a84d32"
+        "9cbbb212-ccc1-4c31-9945-91f6c5a84d32",
+        "5f2fbbfa-c168-4263-9c4c-ad5ec1d959bd"
       ],
       "settings": {
         "title": "Featured Item",
