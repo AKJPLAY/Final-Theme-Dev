@@ -110,10 +110,10 @@
         "title": "Featured Item",
         "slide_show": 4,
         "slide_space": 4,
-        "autoplay": false,
-        "loop": false,
-        "arrow": false,
-        "dots": false,
+        "autoplay": true,
+        "loop": true,
+        "arrow": true,
+        "dots": true,
         "delay": "2000",
         "speed": "500"
       }
