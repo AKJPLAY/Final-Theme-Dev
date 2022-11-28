@@ -1,0 +1,186 @@
+<slider-section class="featured-item-section">
+    <div class="container">
+        <!-- Slider main container -->
+        {% assign breakpointsCount = 0 %}
+        {% assign breakpointsIndex = 0 %}
+        {% for block in section.blocks %}
+            {% if block.type == 'breakpoint'%}
+                {% assign breakpointsCount = breakpointsCount | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+        {{ breakpointsCount }}
+        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{ {% if breakpointsCount != 0 %} "slidesPerView": "{{ section.settings.slide_show }}","spaceBetween": "{{ section.settings.slide_space }}" , {% endif %} "loop": "{{ section.settings.loop }}"{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }},"navigation":{"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"},"pagination":{"el": ".swiper-pagination","dynamicBullets": "true","clickable": "true"}, "breakpoints":{ {% for block in section.blocks %}{% if block.type == 'breakpoint'%} {% assign breakpointsIndex = breakpointsIndex | plus: 1 %} "{{ block.settings.width }}":{"slidesPerView": "{{ block.settings.slide_show }}", "spaceBetween": "{{ block.settings.slide_space }}" }{% if breakpointsIndex != breakpointsCount %},{% endif %}{% endif %} {%endfor%} }}'> 
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                {% for block in section.blocks %}
+                    {% if block.type == 'collection' %}
+                        <div class="swiper-slide">
+                            <div class="inner-container {{ block.settings.image_position }}">
+                                <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}">
+                            </div>
+                        </div>     
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" transform="rotate(-180 24 24)" fill="#D9D9D9"/>
+                    <path d="M28.0002 35L18.0002 24L28.0002 13" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="#D9D9D9"/>
+                    <path d="M19.9998 13L29.9998 24L19.9998 35" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>        
+    </div>
+</slider-section>
+
+</div>
+{% schema %}
+{
+   "name": "Featured Item",
+    "class": "featured-items",
+    "blocks": [
+        {
+            "type": "collection",
+            "name": "Collection",
+            "settings": [
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "Url"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Choose Image",
+                    "info": "If you want custom image choose here"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Lightweight luxury earphones",
+                    "info": "If you want custom title type here"
+                },
+                {
+                    "type": "color",
+                    "id": "bg_color",
+                    "label": "Background Color",
+                    "default": "#FFFFFF"
+                }
+            ]
+        },
+        {
+           "type": "breakpoint",
+           "name": "Breakpoint",
+            "settings": [
+                {
+                    "type": "number",
+                    "id": "width",
+                    "label": "Device Width",
+                    "default": 768,
+                    "info": "in px",
+                    "placeholder": "Work below this width"
+                },
+                {
+                    "type": "range",
+                    "id": "slide_show",
+                    "label": "Slide Show",
+                    "unit": "Sld",
+                    "min": 1,
+                    "max": 5,
+                    "step": 1,
+                    "default": 4
+                },
+                {
+                    "type": "range",
+                    "id": "slide_space",
+                    "label": "Slide Between Space",
+                    "unit": "Sld",
+                    "min": 1,
+                    "max": 30,
+                    "step": 1,
+                    "default": 4
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "Collecction",
+            "name":"Featured Collecction"
+        }
+    ],
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Section Title",
+            "default": "Featured Item"
+        },
+        {
+            "type": "range",
+            "id": "slide_show",
+            "label": "Slide Show",
+            "unit": "Sld",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "default": 4
+        },
+        {
+            "type": "range",
+            "id": "slide_space",
+            "label": "Slide Between Space",
+            "unit": "Sld",
+            "min": 1,
+            "max": 30,
+            "step": 1,
+            "default": 4
+        },
+        {
+            "type": "checkbox",
+            "id": "autoplay",
+            "label": "Autoplay",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "loop",
+            "label": "Loop",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "arrow",
+            "label": "Arrow",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "dots",
+            "label": "Dots",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "delay",
+            "label": "Delay",
+            "default": "2000",
+            "info": "Work in Autoplay"
+        },
+        {
+            "type": "text",
+            "id": "speed",
+            "label": "Speed",
+            "default": "500"
+        }
+    ]
+}
+{% endschema %}

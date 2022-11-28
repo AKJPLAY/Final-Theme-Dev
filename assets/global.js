@@ -169,8 +169,9 @@ function faqPageScript(){
         super();
           this.slider = this.querySelector('.swiper');
           this.config = this.slider.getAttribute('config');
+          console.log(JSON.parse(this.config));
           if(this.slider){
-            const swiper = new Swiper('.' + this.slider.id , JSON.parse(this.config));
+            this.swiper = new Swiper('.' + this.slider.id , JSON.parse(this.config));
           }
       }
     }
