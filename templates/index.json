@@ -59,9 +59,68 @@
         "delay": "2000",
         "speed": "500"
       }
+    },
+    "b78cc72f-3bcd-4584-bdfe-ba1ee3216321": {
+      "type": "collection-featured",
+      "blocks": {
+        "e43bb65a-e438-4063-a882-dd76f79c98a1": {
+          "type": "collection",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_7.png",
+            "title": "Lightweight luxury earphones",
+            "bg_color": "#FFFFFF"
+          }
+        },
+        "d60cab19-19c7-43f4-a36e-72282c944b56": {
+          "type": "collection",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_8.png",
+            "title": "Lightweight luxury earphones",
+            "bg_color": "#FFFFFF"
+          }
+        },
+        "4f9eedc7-4ce8-45c3-85c8-5649454543b2": {
+          "type": "collection",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_9.png",
+            "title": "Lightweight luxury earphones",
+            "bg_color": "#FFFFFF"
+          }
+        },
+        "d7808b58-75e1-44dd-88fe-7effbec26ad0": {
+          "type": "collection",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_10.png",
+            "title": "Lightweight luxury earphones",
+            "bg_color": "#FFFFFF"
+          }
+        }
+      },
+      "block_order": [
+        "e43bb65a-e438-4063-a882-dd76f79c98a1",
+        "d60cab19-19c7-43f4-a36e-72282c944b56",
+        "4f9eedc7-4ce8-45c3-85c8-5649454543b2",
+        "d7808b58-75e1-44dd-88fe-7effbec26ad0"
+      ],
+      "settings": {
+        "title": "Featured Item",
+        "slide_show": 4,
+        "slide_space": 4,
+        "autoplay": false,
+        "loop": false,
+        "arrow": false,
+        "dots": false,
+        "delay": "2000",
+        "speed": "500"
+      }
     }
   },
   "order": [
-    "49a06c91-57a5-47e1-bb00-26704730f742"
+    "49a06c91-57a5-47e1-bb00-26704730f742",
+    "b78cc72f-3bcd-4584-bdfe-ba1ee3216321"
   ]
 }
