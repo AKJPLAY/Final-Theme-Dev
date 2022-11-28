@@ -17,6 +17,7 @@
                         <div class="swiper-slide">
                             <div class="inner-container {{ block.settings.image_position }}">
                                 <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}">
+                                <h2 class="title">{{ block.settings.title }}</h2>
                             </div>
                         </div>     
                     {% endif %}
@@ -126,6 +127,22 @@
             "id": "title",
             "label": "Section Title",
             "default": "Featured Item"
+        },
+        {
+            "type": "select",
+            "id": "content_style",
+            "label": "Show Content",
+            "options": [
+                {
+                    "value": "inside",
+                    "label": "Inside"
+                },
+                {
+                    "value": "outside",
+                    "label": "Outside"
+                }
+            ],
+           "default": "inside"
         },
         {
             "type": "range",
