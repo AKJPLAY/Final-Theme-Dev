@@ -181,8 +181,5 @@ function faqPageScript(){
     
 
   //Slider Script End
-
-
-  console.log('edito js');
 })();
 
