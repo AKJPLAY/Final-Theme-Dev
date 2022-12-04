@@ -682,10 +682,13 @@ annoucement-bar {
             margin: auto;
             margin-bottom: 0px;
             height: max-content;
-            font-size: var(--featured-item-title-dfs);
+            font-size: var(--featured-item-title-mfs);
             font-family: 'Poppins';
             font-weight: bolder;
             padding: 0px 10px;
+            @media (min-width: 750px) {
+                font-size: var(--featured-item-title-dfs);
+            }
         }
     }
 }

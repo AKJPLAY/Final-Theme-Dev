@@ -1373,8 +1373,13 @@ annoucement-bar .swiper-button-prev {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  font-size: var(--featured-item-title-dfs);
+  font-size: var(--featured-item-title-mfs);
   font-family: "Poppins";
   font-weight: bolder;
   padding: 0px 10px;
+}
+@media (min-width: 750px) {
+  .featured-item-section .inner-container .title {
+    font-size: var(--featured-item-title-dfs);
+  }
 }/*# sourceMappingURL=base.css.map */
