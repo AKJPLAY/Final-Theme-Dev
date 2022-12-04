@@ -68,8 +68,8 @@
           "settings": {
             "url": "",
             "image": "shopify:\/\/shop_images\/Rectangle_7.png",
-            "title": "Lightweight luxury earphones",
-            "bg_color": "#FFFFFF"
+            "title": "Headphone",
+            "bg_color": "#ffffff"
           }
         },
         "d60cab19-19c7-43f4-a36e-72282c944b56": {
@@ -77,8 +77,8 @@
           "settings": {
             "url": "",
             "image": "shopify:\/\/shop_images\/Rectangle_8.png",
-            "title": "Lightweight luxury earphones",
-            "bg_color": "#FFFFFF"
+            "title": "Earphone",
+            "bg_color": "#ffffff"
           }
         },
         "4f9eedc7-4ce8-45c3-85c8-5649454543b2": {
@@ -86,8 +86,8 @@
           "settings": {
             "url": "",
             "image": "shopify:\/\/shop_images\/Rectangle_9.png",
-            "title": "Lightweight luxury earphones",
-            "bg_color": "#FFFFFF"
+            "title": "Speakers",
+            "bg_color": "#ffffff"
           }
         },
         "d7808b58-75e1-44dd-88fe-7effbec26ad0": {
@@ -95,8 +95,8 @@
           "settings": {
             "url": "",
             "image": "shopify:\/\/shop_images\/Rectangle_10.png",
-            "title": "Lightweight luxury earphones",
-            "bg_color": "#FFFFFF"
+            "title": "Accessories",
+            "bg_color": "#ffffff"
           }
         },
         "9cbbb212-ccc1-4c31-9945-91f6c5a84d32": {
@@ -135,6 +135,7 @@
       ],
       "settings": {
         "title": "Featured Item",
+        "content_style": "inside",
         "slide_show": 4,
         "slide_space": 4,
         "autoplay": true,
