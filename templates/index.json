@@ -102,7 +102,7 @@
         "9cbbb212-ccc1-4c31-9945-91f6c5a84d32": {
           "type": "breakpoint",
           "settings": {
-            "width": 768,
+            "width": 750,
             "slide_show": 2,
             "slide_space": 8
           }
@@ -110,7 +110,7 @@
         "5f2fbbfa-c168-4263-9c4c-ad5ec1d959bd": {
           "type": "breakpoint",
           "settings": {
-            "width": 1200,
+            "width": 751,
             "slide_show": 3,
             "slide_space": 10
           }
@@ -135,13 +135,15 @@
       ],
       "settings": {
         "title": "Featured Item",
+        "title_size_desktop": 37,
+        "title_size_mobile": 25,
         "content_style": "inside",
         "slide_show": 4,
         "slide_space": 4,
         "autoplay": true,
         "loop": true,
         "arrow": true,
-        "dots": true,
+        "dots": false,
         "delay": "2000",
         "speed": "500"
       }
