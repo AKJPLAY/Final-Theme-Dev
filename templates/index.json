@@ -110,7 +110,7 @@
         "5f2fbbfa-c168-4263-9c4c-ad5ec1d959bd": {
           "type": "breakpoint",
           "settings": {
-            "width": 1200,
+            "width": 750,
             "slide_show": 3,
             "slide_space": 10
           }
@@ -135,6 +135,8 @@
       ],
       "settings": {
         "title": "Featured Item",
+        "title_size_desktop": 37,
+        "title_size_mobile": 25,
         "content_style": "inside",
         "slide_show": 4,
         "slide_space": 4,
