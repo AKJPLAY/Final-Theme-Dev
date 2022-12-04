@@ -178,5 +178,11 @@ function faqPageScript(){
 
     customElements.define('slider-section', SliderSection);
 
+    
+
   //Slider Script End
+
+
+  console.log('edito js');
 })();
+
