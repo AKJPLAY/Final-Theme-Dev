@@ -6,7 +6,7 @@ document.addEventListener('shopify:section:load', (event) => {
         const config = event.target.slider.getAttribute('config');
         console.log(JSON.parse(config));
         if(slider){
-            new Swiper('.' + this.slider.id , JSON.parse(this.config));
+            new Swiper('.' + slider.id , JSON.parse(config));
         }    
     }
 });
