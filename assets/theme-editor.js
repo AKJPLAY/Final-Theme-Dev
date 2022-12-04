@@ -1,4 +1,5 @@
 
-document.addEventListener('shopify:section:load', () => {
+document.addEventListener('shopify:section:load', (event) => {
     console.log('edito js');
+    event.target;
 });
