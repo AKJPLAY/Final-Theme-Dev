@@ -1,1 +1,4 @@
-console.log('edito js');
+
+document.addEventListener('shopify:section:load', () => {
+    console.log('edito js');
+});
