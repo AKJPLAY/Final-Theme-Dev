@@ -1,4 +1,4 @@
-<slider-section class="featured-item-section">
+<slider-section class="featured-item-section" style="--featured-item-title-dfs: {{ section.settings.title_size_desktop }}px; --featured-item-title-mfs: {{ section.settings.title_size_mobile }}px;">
     <div class="container">
         <!-- Slider main container -->
         {% assign breakpointsCount = 0 %}
@@ -67,6 +67,26 @@
                     "label": "Title",
                     "default": "Lightweight luxury earphones",
                     "info": "If you want custom title type here"
+                },
+                {
+                    "type": "range",
+                    "id": "title_size_desktop",
+                    "label": "Title Font Size Desktop",
+                    "unit": "px",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1,
+                    "default": 37
+                },
+                {
+                    "type": "range",
+                    "id": "title_size_mobile",
+                    "label": "Title Font Size Mobile",
+                    "unit": "px",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1,
+                    "default": 25
                 },
                 {
                     "type": "color",

@@ -682,7 +682,7 @@ annoucement-bar {
             margin: auto;
             margin-bottom: 0px;
             height: max-content;
-            font-size: 37px;
+            font-size: var(--featured-item-title-dfs);
             font-family: 'Poppins';
             font-weight: bolder;
             padding: 0px 10px;
