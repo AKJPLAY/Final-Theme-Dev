@@ -1015,7 +1015,10 @@ body {
 .primary-header .pirmary-navigation .nav-list .marker {
   position: absolute;
   width: 20px;
-  height: 100%;
+  height: 3px;
+  margin-top: auto;
+  margin-bottom: 0;
+  inset: 0;
   background-color: red;
   transition: all 0.5s ease-in-out;
   left: 0;
