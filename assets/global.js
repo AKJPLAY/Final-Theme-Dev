@@ -185,6 +185,19 @@ function faqPageScript(){
   document.querySelectorAll('.nav-list li').forEach(li => {
     li.addEventListener('mouseenter', function(event){
       console.log(event);
+      if(document.getElementById('LineAnimation')){
+        document.getElementById('LineAnimation').remove();
+      }else {
+        const style = document.createElement('style');
+        style.id = 'LineAnimation';
+        style.textContent = `
+          .primary-header .pirmary-navigation .nav-list:before {
+            left: ${event.offsetLeft}px;
+            width: ${event.offsetWidth}px; 
+          }
+        `;
+        document.append(style);
+      }
     });
   })
 })();
