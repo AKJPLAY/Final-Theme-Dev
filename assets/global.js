@@ -192,8 +192,8 @@ function faqPageScript(){
         style.id = 'LineAnimation';
         style.textContent = `
           .primary-header .pirmary-navigation .nav-list:before {
-            left: ${event.offsetLeft}px;
-            width: ${event.offsetWidth}px; 
+            left: ${event.target.offsetLeft}px;
+            width: ${event.target.offsetWidth}px; 
           }
         `;
         document.querySelector('body').append(style);
