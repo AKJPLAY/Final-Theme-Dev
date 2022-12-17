@@ -196,7 +196,7 @@ function faqPageScript(){
             width: ${event.offsetWidth}px; 
           }
         `;
-        document.append(style);
+        document.querySelector('body').append(style);
       }
     });
   })
