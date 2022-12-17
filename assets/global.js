@@ -185,9 +185,10 @@ function faqPageScript(){
   document.querySelectorAll('.nav-list li').forEach(li => {
     li.addEventListener('mouseenter', function(event){
       console.log(event);
-      if(document.getElementById('LineAnimation')){
-        document.getElementById('LineAnimation').remove();
-      }else {
+        if(document.getElementById('LineAnimation')){
+          document.getElementById('LineAnimation').remove();
+        }
+        
         const style = document.createElement('style');
         style.id = 'LineAnimation';
         style.textContent = `
@@ -197,7 +198,6 @@ function faqPageScript(){
           }
         `;
         document.querySelector('body').append(style);
-      }
     });
   })
 })();
