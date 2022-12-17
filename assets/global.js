@@ -177,9 +177,15 @@ function faqPageScript(){
     }
 
     customElements.define('slider-section', SliderSection);
-
-    
-
   //Slider Script End
+
+
+
+  //Link Line
+  document.querySelectorAll('.nav-list li').forEach(li => {
+    li.addEventListener('mouseenter', function(event){
+      console.log(event);
+    });
+  })
 })();
 
