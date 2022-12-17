@@ -1020,6 +1020,7 @@ body {
   width: 20px;
   height: 100%;
   background-color: red;
+  transition: margin 0.5s ease-in-out;
 }
 @media (max-width: 62em) {
   .primary-header .pirmary-navigation {
