@@ -1012,8 +1012,7 @@ body {
   font-weight: var(--fw-semi-bold);
   position: relative;
 }
-.primary-header .pirmary-navigation .nav-list::before {
-  content: "";
+.primary-header .pirmary-navigation .nav-list .marker {
   position: absolute;
   width: 20px;
   height: 100%;

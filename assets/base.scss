@@ -329,8 +329,7 @@ body {
             gap: clamp(var(--size-400), 5vw, var(--size-700));
             font-weight: var(--fw-semi-bold);
             position: relative;
-            &::before {
-                content: '';
+            .marker {
                 position: absolute;
                 width: 20px;
                 height: 100%;

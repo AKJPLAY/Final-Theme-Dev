@@ -185,20 +185,8 @@ function faqPageScript(){
   document.querySelectorAll('.nav-list li').forEach(li => {
     li.addEventListener('mouseenter', function(event){
       console.log(event);
-        if(document.getElementById('LineAnimation')){
-          document.getElementById('LineAnimation').remove();
-        }
-
-        const style = document.createElement('style');
-        style.id = 'LineAnimation';
-        style.textContent = `
-          .primary-header .pirmary-navigation .nav-list:before {
-            left: ${event.target.offsetLeft}px;
-            width: ${event.target.offsetWidth}px; 
-            transition: all .5s ease-in-out;
-          }
-        `;
-        document.querySelector('body').append(style);
+        li.parentElement.querySelector('.marker').style.left = `${event.target.offsetLeft}px`;
+        li.parentElement.querySelector('.marker').style.width = `${event.target.offsetWidth}px`;
     });
   })
 })();
