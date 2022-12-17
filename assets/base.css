@@ -1015,8 +1015,6 @@ body {
 .primary-header .pirmary-navigation .nav-list::before {
   content: "";
   position: absolute;
-  inset: 0;
-  margin: auto;
   width: 20px;
   height: 100%;
   background-color: red;

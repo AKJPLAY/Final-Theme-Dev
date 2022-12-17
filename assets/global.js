@@ -188,12 +188,12 @@ function faqPageScript(){
         if(document.getElementById('LineAnimation')){
           document.getElementById('LineAnimation').remove();
         }
-        
+
         const style = document.createElement('style');
         style.id = 'LineAnimation';
         style.textContent = `
           .primary-header .pirmary-navigation .nav-list:before {
-            margin-left: ${event.target.offsetLeft}px;
+            left: ${event.target.offsetLeft}px;
             width: ${event.target.offsetWidth}px; 
           }
         `;
