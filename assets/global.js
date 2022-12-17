@@ -195,6 +195,7 @@ function faqPageScript(){
           .primary-header .pirmary-navigation .nav-list:before {
             left: ${event.target.offsetLeft}px;
             width: ${event.target.offsetWidth}px; 
+            transition: all .5s ease-in-out;
           }
         `;
         document.querySelector('body').append(style);
