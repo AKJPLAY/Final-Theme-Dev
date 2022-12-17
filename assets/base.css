@@ -1005,6 +1005,18 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   }
 }
+.primary-header .pirmary-navigation ul {
+  position: relative;
+}
+.primary-header .pirmary-navigation ul::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 20%;
+  height: 100%;
+  background-color: red;
+}
 .primary-header .pirmary-navigation .nav-list {
   font-size: var(--fs-nav);
   display: flex;
