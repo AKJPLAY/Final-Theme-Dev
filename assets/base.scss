@@ -323,23 +323,21 @@ body {
 
 
     .pirmary-navigation {
-        ul {
-            position: relative;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    inset: 0;
-                    margin: auto;
-                    width: 20%;
-                    height: 100%;
-                    background-color: red;
-                }
-        }
         .nav-list {
             font-size: var(--fs-nav);
             display: flex;
             gap: clamp(var(--size-400), 5vw, var(--size-700));
             font-weight: var(--fw-semi-bold);
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                width: 20px;
+                height: 10px;
+                background-color: red;
+            }
         }
         @media (max-width: 62em) {
             display: none;
