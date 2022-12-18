@@ -1381,6 +1381,7 @@ annoucement-bar .swiper-button-prev {
 
 .featured-item-section {
   margin-bottom: 40px;
+  display: flow-root;
 }
 .featured-item-section .inner-container {
   position: relative;
