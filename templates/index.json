@@ -147,10 +147,80 @@
         "delay": "2000",
         "speed": "500"
       }
+    },
+    "72682a4c-7acc-4998-8f29-dc2ea877462d": {
+      "type": "collection-featured",
+      "blocks": {
+        "0707036f-a1e5-4961-bd56-58a22cc5b9b8": {
+          "type": "collection",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_11.png",
+            "title": "Lightweight luxury  earphones",
+            "bg_color": "#FFFFFF"
+          }
+        },
+        "c3088325-1da5-46ee-bd1e-248348b6d8bd": {
+          "type": "collection",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_12.png",
+            "title": "Upgrade your  listening experience",
+            "bg_color": "#FFFFFF"
+          }
+        },
+        "6f06f52e-e522-44d7-9d44-fce917928fc1": {
+          "type": "collection",
+          "settings": {
+            "url": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_13.png",
+            "title": "Discover exclusive  collaborations",
+            "bg_color": "#FFFFFF"
+          }
+        },
+        "acb38eaf-22ee-4af0-a1e1-bb4a3071eb38": {
+          "type": "breakpoint",
+          "settings": {
+            "width": 750,
+            "slide_show": 2,
+            "slide_space": 4
+          }
+        },
+        "94b278ca-6670-418c-962f-fd0317a2fb8d": {
+          "type": "breakpoint",
+          "settings": {
+            "width": 751,
+            "slide_show": 3,
+            "slide_space": 4
+          }
+        }
+      },
+      "block_order": [
+        "0707036f-a1e5-4961-bd56-58a22cc5b9b8",
+        "c3088325-1da5-46ee-bd1e-248348b6d8bd",
+        "6f06f52e-e522-44d7-9d44-fce917928fc1",
+        "acb38eaf-22ee-4af0-a1e1-bb4a3071eb38",
+        "94b278ca-6670-418c-962f-fd0317a2fb8d"
+      ],
+      "settings": {
+        "title": "Featured Item",
+        "title_size_desktop": 37,
+        "title_size_mobile": 25,
+        "content_style": "inside",
+        "slide_show": 4,
+        "slide_space": 4,
+        "autoplay": false,
+        "loop": false,
+        "arrow": false,
+        "dots": false,
+        "delay": "2000",
+        "speed": "500"
+      }
     }
   },
   "order": [
     "49a06c91-57a5-47e1-bb00-26704730f742",
-    "b78cc72f-3bcd-4584-bdfe-ba1ee3216321"
+    "b78cc72f-3bcd-4584-bdfe-ba1ee3216321",
+    "72682a4c-7acc-4998-8f29-dc2ea877462d"
   ]
 }
