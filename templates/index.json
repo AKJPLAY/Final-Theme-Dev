@@ -155,6 +155,7 @@
           "type": "collection",
           "settings": {
             "url": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_11.png",
             "title": "Lightweight luxury  earphones",
             "bg_color": "#FFFFFF"
           }
@@ -163,6 +164,7 @@
           "type": "collection",
           "settings": {
             "url": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_12.png",
             "title": "Upgrade your  listening experience",
             "bg_color": "#FFFFFF"
           }
@@ -171,6 +173,7 @@
           "type": "collection",
           "settings": {
             "url": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_13.png",
             "title": "Discover exclusive  collaborations",
             "bg_color": "#FFFFFF"
           }
