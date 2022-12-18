@@ -134,6 +134,10 @@
         "3b136e9a-f491-4df8-af63-29fa360cbfe1"
       ],
       "settings": {
+        "top_padding": 10,
+        "bottom_padding": 10,
+        "mobile_top_padding": 5,
+        "mobile_bottom_padding": 5,
         "title": "Featured Item",
         "title_size_desktop": 37,
         "title_size_mobile": 25,
@@ -157,7 +161,7 @@
             "url": "",
             "image": "shopify:\/\/shop_images\/Rectangle_11.png",
             "title": "Lightweight luxury  earphones",
-            "bg_color": "#FFFFFF"
+            "bg_color": "#ffffff"
           }
         },
         "c3088325-1da5-46ee-bd1e-248348b6d8bd": {
@@ -166,7 +170,7 @@
             "url": "",
             "image": "shopify:\/\/shop_images\/Rectangle_12.png",
             "title": "Upgrade your  listening experience",
-            "bg_color": "#FFFFFF"
+            "bg_color": "#ffffff"
           }
         },
         "6f06f52e-e522-44d7-9d44-fce917928fc1": {
@@ -175,7 +179,7 @@
             "url": "",
             "image": "shopify:\/\/shop_images\/Rectangle_13.png",
             "title": "Discover exclusive  collaborations",
-            "bg_color": "#FFFFFF"
+            "bg_color": "#ffffff"
           }
         },
         "acb38eaf-22ee-4af0-a1e1-bb4a3071eb38": {
@@ -191,7 +195,7 @@
           "settings": {
             "width": 751,
             "slide_show": 3,
-            "slide_space": 4
+            "slide_space": 10
           }
         }
       },
@@ -203,6 +207,10 @@
         "94b278ca-6670-418c-962f-fd0317a2fb8d"
       ],
       "settings": {
+        "top_padding": 10,
+        "bottom_padding": 10,
+        "mobile_top_padding": 5,
+        "mobile_bottom_padding": 5,
         "title": "Featured Item",
         "title_size_desktop": 37,
         "title_size_mobile": 25,
