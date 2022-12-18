@@ -166,11 +166,20 @@
             "title": "Upgrade your  listening experience",
             "bg_color": "#FFFFFF"
           }
+        },
+        "6f06f52e-e522-44d7-9d44-fce917928fc1": {
+          "type": "collection",
+          "settings": {
+            "url": "",
+            "title": "Discover exclusive  collaborations",
+            "bg_color": "#FFFFFF"
+          }
         }
       },
       "block_order": [
         "0707036f-a1e5-4961-bd56-58a22cc5b9b8",
-        "c3088325-1da5-46ee-bd1e-248348b6d8bd"
+        "c3088325-1da5-46ee-bd1e-248348b6d8bd",
+        "6f06f52e-e522-44d7-9d44-fce917928fc1"
       ],
       "settings": {
         "title": "Featured Item",
