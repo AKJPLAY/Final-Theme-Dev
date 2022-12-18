@@ -177,12 +177,21 @@
             "title": "Discover exclusive  collaborations",
             "bg_color": "#FFFFFF"
           }
+        },
+        "acb38eaf-22ee-4af0-a1e1-bb4a3071eb38": {
+          "type": "breakpoint",
+          "settings": {
+            "width": 768,
+            "slide_show": 3,
+            "slide_space": 4
+          }
         }
       },
       "block_order": [
         "0707036f-a1e5-4961-bd56-58a22cc5b9b8",
         "c3088325-1da5-46ee-bd1e-248348b6d8bd",
-        "6f06f52e-e522-44d7-9d44-fce917928fc1"
+        "6f06f52e-e522-44d7-9d44-fce917928fc1",
+        "acb38eaf-22ee-4af0-a1e1-bb4a3071eb38"
       ],
       "settings": {
         "title": "Featured Item",
