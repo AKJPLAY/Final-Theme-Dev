@@ -187,7 +187,7 @@
           "settings": {
             "width": 750,
             "slide_show": 2,
-            "slide_space": 4
+            "slide_space": 8
           }
         },
         "94b278ca-6670-418c-962f-fd0317a2fb8d": {
@@ -195,7 +195,7 @@
           "settings": {
             "width": 751,
             "slide_show": 3,
-            "slide_space": 10
+            "slide_space": 14
           }
         }
       },
