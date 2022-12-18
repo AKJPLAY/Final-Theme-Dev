@@ -8,7 +8,7 @@
                 {% assign breakpointsCount = breakpointsCount | plus: 1 %}
             {% endif %}
         {% endfor %}
-        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{ {% if breakpointsCount == 0 %} "slidesPerView": {{ section.settings.slide_show }},"spaceBetween": {{ section.settings.slide_space }} , {% endif %} "loop": {{ section.settings.loop }}{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }},"navigation":{"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"},"pagination":{"el": ".swiper-pagination","dynamicBullets": "true","clickable": "true"}, "breakpoints":{ {% for block in section.blocks %}{% if block.type == 'breakpoint'%} {% assign breakpointsIndex = breakpointsIndex | plus: 1 %} "{{ block.settings.width }}":{"slidesPerView": {{ block.settings.slide_show }}, "spaceBetween": {{ block.settings.slide_space }} }{% if breakpointsIndex != breakpointsCount %},{% endif %}{% endif %} {%endfor%} }}'> 
+        <div class="swiper swiper-{{ template.name }}{{ section.id }}" id="swiper-{{ template.name }}{{ section.id }}" config='{ {% if breakpointsCount == 0 %} "slidesPerView": {{ section.settings.slide_show }},"spaceBetween": {{ section.settings.slide_space }} , {% endif %} "loop": {{ section.settings.loop }}{% if section.settings.autoplay == true %},"autoplay": {"delay": {{ section.settings.delay }}}{% endif %},"speed": {{ section.settings.speed }},"navigation":{"nextEl": ".swiper-button-next{{ section.id }}","prevEl": ".swiper-button-prev{{ section.id }}"},"pagination":{"el": ".swiper-pagination","dynamicBullets": "true","clickable": "true"}, "breakpoints":{ {% for block in section.blocks %}{% if block.type == 'breakpoint'%} {% assign breakpointsIndex = breakpointsIndex | plus: 1 %} "{{ block.settings.width }}":{"slidesPerView": {{ block.settings.slide_show }}, "spaceBetween": {{ block.settings.slide_space }} }{% if breakpointsIndex != breakpointsCount %},{% endif %}{% endif %} {%endfor%} }}'> 
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -27,13 +27,13 @@
                 <div class="swiper-pagination"></div>    
             {% endif %}
             {% if section.settings.arrow %}
-                <div class="swiper-button-prev">
+                <div class="swiper-button-prev swiper-button-prev{{ section.id }}">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="24" cy="24" r="24" transform="rotate(-180 24 24)" fill="#D9D9D9"/>
                         <path d="M28.0002 35L18.0002 24L28.0002 13" stroke="black" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </div>
-                <div class="swiper-button-next">
+                <div class="swiper-button-next swiper-button-next{{ section.id }}">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="24" cy="24" r="24" fill="#D9D9D9"/>
                         <path d="M19.9998 13L29.9998 24L19.9998 35" stroke="black" stroke-width="2" stroke-linecap="round"/>
