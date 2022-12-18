@@ -181,8 +181,8 @@
         "acb38eaf-22ee-4af0-a1e1-bb4a3071eb38": {
           "type": "breakpoint",
           "settings": {
-            "width": 768,
-            "slide_show": 3,
+            "width": 750,
+            "slide_show": 2,
             "slide_space": 4
           }
         }
