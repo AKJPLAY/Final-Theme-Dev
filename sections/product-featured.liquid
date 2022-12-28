@@ -22,7 +22,7 @@
                         </div>     
                     {% endfor %}
                 {% else %}
-                    {% for product in section.settings.product_list_items %}
+                    {% for product in section.settings.product_list_items.value %}
                         <div class="swiper-slide">
                             <div class="inner-container {{ block.settings.image_position }}">
                                 <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="{{ product.featured_image.src.alt }}">
