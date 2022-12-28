@@ -229,14 +229,18 @@
       "type": "product-featured",
       "settings": {
         "collection": "",
-        "product_list": [
+        "product_list_items": [
           "albufeira-cdlw211004",
+          "albufeira-cdlw211018",
           "albufeira-cdlw211150",
+          "albufeira-cdlw211226",
           "albufeira-cdlw211225",
           "apex-cdlw212149",
-          "albufeira-cdlw211226",
+          "apex-cdlw212150",
           "apex-cdlw212202",
-          "apex-cdlw212150"
+          "apex-cdlw212242",
+          "apex-cdlw221324",
+          "auronzo-cdlm211090"
         ],
         "top_padding": 10,
         "bottom_padding": 10,
