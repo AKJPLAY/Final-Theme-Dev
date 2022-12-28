@@ -15,7 +15,7 @@
                 {% if section.settings.collection %}
                     {% assign products = section.settings.collection.products %}
                 {% else %}
-                    {% assign products = section.settings.collection.product_list.value %}
+                    {% assign products = section.settings.product_list.value %}
                 {% endif %}
                     
                 {% for product in products %}
