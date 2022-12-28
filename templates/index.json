@@ -224,11 +224,43 @@
         "delay": "2000",
         "speed": "500"
       }
+    },
+    "86b3d284-a111-411e-ad78-01ec03ca4957": {
+      "type": "product-featured",
+      "settings": {
+        "collection": "",
+        "product_list": [
+          "albufeira-cdlw211004",
+          "albufeira-cdlw211150",
+          "albufeira-cdlw211225",
+          "apex-cdlw212149",
+          "albufeira-cdlw211226",
+          "apex-cdlw212202",
+          "apex-cdlw212150"
+        ],
+        "top_padding": 10,
+        "bottom_padding": 10,
+        "mobile_top_padding": 5,
+        "mobile_bottom_padding": 5,
+        "title": "Featured Item",
+        "title_size_desktop": 37,
+        "title_size_mobile": 25,
+        "content_style": "inside",
+        "slide_show": 4,
+        "slide_space": 4,
+        "autoplay": false,
+        "loop": false,
+        "arrow": false,
+        "dots": false,
+        "delay": "2000",
+        "speed": "500"
+      }
     }
   },
   "order": [
     "49a06c91-57a5-47e1-bb00-26704730f742",
     "b78cc72f-3bcd-4584-bdfe-ba1ee3216321",
-    "72682a4c-7acc-4998-8f29-dc2ea877462d"
+    "72682a4c-7acc-4998-8f29-dc2ea877462d",
+    "86b3d284-a111-411e-ad78-01ec03ca4957"
   ]
 }
