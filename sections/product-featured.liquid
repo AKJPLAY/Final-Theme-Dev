@@ -22,13 +22,13 @@
                         </div>     
                     {% endfor %}
                 {% else %}
-                    {% for product in section.settings.product_list.value %}
-                    <div class="swiper-slide">
-                        <div class="inner-container {{ block.settings.image_position }}">
-                            <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="{{ product.featured_image.src.alt }}">
-                            <h2 class="title">{{ product.title }}</h2>
-                        </div>
-                    </div>     
+                    {% for product in section.settings.product_list_items.value %}
+                        <div class="swiper-slide">
+                            <div class="inner-container {{ block.settings.image_position }}">
+                                <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="{{ product.featured_image.src.alt }}">
+                                <h2 class="title">{{ product.title }}</h2>
+                            </div>
+                        </div>     
                     {% endfor %}
                 {% endif %}
             </div>
@@ -145,9 +145,8 @@
         },
         {
             "type": "product_list",
-            "id": "product_list",
-            "label": "Products",
-            "limit": 12
+            "id": "product_list_items",
+            "label": "Products"
         },
         {
             "type": "header",
