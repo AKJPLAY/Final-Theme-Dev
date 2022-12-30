@@ -43,8 +43,26 @@
                     {% for product in section.settings.product_list_items %}
                         <div class="swiper-slide">
                             <div class="inner-container product-container {{ block.settings.image_position }}">
-                                <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="{{ product.featured_image.src.alt }}">
-                                <h2 class="title">{{ product.title }}</h2>
+                                <div class="badges">
+                                    New
+                                </div>
+                                <div class="card-inner">
+                                    <div class="product-media-container">
+                                        <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="{{ product.featured_image.src.alt }}">
+                                        <div class="product-form">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="color-options">
+    
+                                        </div>
+                                        <h2 class="title">{{ product.title }}</h2>
+                                        <div class="price-container">
+    
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>     
                     {% endfor %}
