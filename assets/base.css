@@ -1409,12 +1409,11 @@ annoucement-bar .swiper-button-prev {
 .featured-items {
   overflow: hidden;
 }
-.featured-items .featured-item-section .swiper {
-  overflow: visible;
-}
-
 .featured-items-product {
   padding: 10px 0;
+}
+.featured-items-product .swiper-slide {
+  padding: 20px 0;
 }
 
 .product-card-slder .product-media-container {

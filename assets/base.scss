@@ -722,13 +722,15 @@ annoucement-bar {
     overflow: hidden;
     .featured-item-section {
         .swiper {
-            overflow: visible;
         }
     }
 }
 
 .featured-items-product {
     padding: 10px 0;
+    .swiper-slide {
+        padding: 20px 0;
+    }
 }
 
 .product-card-slder { 
