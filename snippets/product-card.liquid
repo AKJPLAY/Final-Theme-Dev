@@ -1,0 +1,51 @@
+{% assign badges_count = 0 %}
+{%- if card_product.available == false -%}
+{% assign badges_count = badges_count | plus: 1 %}
+{%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+{% assign badges_count = badges_count | plus: 1 %}
+{%- endif -%}
+
+{% if badges_count == 0 %}
+        {% assign badge = 'badge badge--nornal' %}
+    {% endif %}
+    {% if badges_count == 1 %}
+        {%- if card_product.available == false -%}
+            {% assign badge = 'badge badge--soldout' %}
+        {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+            {% assign badge = 'badge badge--sale' %}
+        {%- endif -%}
+    {% endif %}
+    {% if badges_count > 1 %}
+        {% assign badge = 'badge badge--multi' %}
+    {% endif %}
+
+<div class="inner-container product-container product-card-slder {{ badge }}">
+    <div class="badges">
+        {%- if card_product.available == false -%}
+              <span class="soldout">
+                Sold out
+              </span>
+        {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+              <span class="Sale">
+                Sale
+              </span>
+        {%- endif -%}
+    </div>
+    <div class="card-inner">
+        <div class="product-media-container">
+            <img src="{{ card_product.featured_image.src | img_url: 'master' }}" alt="{{ card_product.featured_image.src.alt }}">
+            <div class="product-form">
+                
+            </div>
+        </div>
+        <div class="product-info">
+            <div class="color-options">
+
+            </div>
+            <h2 class="title">{{ card_product.title }}</h2>
+            <div class="price-container">
+
+            </div>
+        </div>
+    </div>
+</div>
